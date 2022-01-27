@@ -1,7 +1,7 @@
 package com.example.android_ca.core.di
 
 import com.example.android_ca.BuildConfig
-import com.example.android_ca.feature.data.RickAndMortyApi
+import com.example.android_ca.feature.data.remote.RickAndMortyApi
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
