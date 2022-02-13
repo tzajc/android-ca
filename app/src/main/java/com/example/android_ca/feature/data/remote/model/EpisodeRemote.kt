@@ -4,7 +4,7 @@ import com.example.android_ca.feature.episodes.domain.model.Episode
 import com.google.gson.annotations.SerializedName
 
 
-class EpisodeRemote(
+data class EpisodeRemote(
     @SerializedName("id") val id: Int,
     @SerializedName("name") val name: String,
     @SerializedName("air_date") val airDate: String,
