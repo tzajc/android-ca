@@ -9,8 +9,8 @@ data class LocationDisplayable(
     val dimension: String,
     val residents: List<String>,
     val url: String
-){
-    constructor(location: Location): this (
+) {
+    constructor(location: Location) : this(
         id = location.id,
         name = location.name,
         type = location.type,
