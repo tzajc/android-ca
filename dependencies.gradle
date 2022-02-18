@@ -62,7 +62,7 @@ ext {
     networkDependencies = [
             retrofit                 : "com.squareup.retrofit2:retrofit:" + retrofitVersion,
             retrofitConverterGson    : "com.squareup.retrofit2:converter-gson:" + retrofitVersion,
-            okhttp3ConverterGson     : "com.squareup.okhttp3:converter-gson:" + okhttp3Version,
+            okhttp3                  : "com.squareup.okhttp3:okhttp:" + okhttp3Version,
             okhttp3LoggingInterceptor: "com.squareup.okhttp3:logging-interceptor:" + okhttp3Version
     ]
 
