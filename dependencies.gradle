@@ -66,14 +66,18 @@ ext {
             okhttp3LoggingInterceptor: "com.squareup.okhttp3:logging-interceptor:" + okhttp3Version
     ]
 
-    roomRuntimeDependencies = "androidx.room:room-runtime:" + roomVersion
+    roomRuntimeDependencies = [
+            "androidx.room:room-runtime:" + roomVersion,
+            "androidx.room:room-ktx:" + roomVersion,
+    ]
     roomCompilerDependencies = "androidx.room:room-compiler:" + roomVersion
 
     testImplementationDependencies = [
             junitJupiterApi   : "org.junit.jupiter:junit-jupiter-api:" + junitVersion,
             junitJupiterParams: "org.junit.jupiter:junit-jupiter-params:" + junitVersion,
             mockk             : "io.mockk:mockk:" + mockVersion,
-            kluent            : "org.amshove.kluent:kluent:" + kluentVersion
+            kluent            : "org.amshove.kluent:kluent:" + kluentVersion,
+            coroutinesTest    : "org.jetbrains.kotlinx:kotlinx-coroutines-test:" + coroutinesVersion
     ]
 
     testRuntimeOnlyDependencies = "org.junit.jupiter:junit-jupiter-engine:" + junitVersion
