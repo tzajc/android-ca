@@ -1,5 +1,6 @@
 package com.example.android_ca.feature.characters.data.local.model
 
+import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.example.android_ca.feature.characters.domain.model.Character
@@ -14,7 +15,9 @@ data class CharacterCached(
     val species: String,
     val type: String,
     val gender: String,
+    @Embedded(prefix = "CharacterOriginCached")
     val origin: CharacterLocationCached,
+    @Embedded(prefix = "CharacterLocationCached")
     val location: CharacterLocationCached,
     val image: String,
     val episode: List<String>,

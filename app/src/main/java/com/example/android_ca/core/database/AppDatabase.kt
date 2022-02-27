@@ -19,7 +19,7 @@ import com.example.android_ca.feature.locations.data.local.model.LocationCached
     version = 1,
     exportSchema = false
 )
-@TypeConverters(ListConverter::class, CharacterLocationConverter::class)
+@TypeConverters(ListConverter::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract val episodeDao: EpisodeDao
     abstract val locationDao: LocationDao
