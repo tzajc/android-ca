@@ -1,28 +1,28 @@
 package com.example.android_ca.core.di
 
 import androidx.room.Room.databaseBuilder
-import com.example.android_ca.core.app.App
-import com.example.android_ca.feature.data.local.RickAndMortyDatabase
-import com.example.android_ca.feature.data.local.dao.ExampleDAO
-import org.koin.android.ext.koin.androidApplication
+import com.example.android_ca.core.database.AppDatabase
+import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 
 val databaseModule = module {
-    fun provideDataBase(application: App): RickAndMortyDatabase {
-        return databaseBuilder(application, RickAndMortyDatabase::class.java, "RickAndMorty")
-            .fallbackToDestructiveMigration()
-            .build()
-    }
-
-    fun provideDao(dataBase: RickAndMortyDatabase): ExampleDAO {
-        return dataBase.exampleDAO
+    single {
+        databaseBuilder(
+            androidContext(),
+            AppDatabase::class.java,
+            "RickAndMorty"
+        )
     }
 
     single {
-        provideDataBase(androidApplication() as App)
+        get<AppDatabase>().episodeDao
     }
 
     single {
-        provideDao(get())
+        get<AppDatabase>().locationDao
+    }
+
+    single {
+        get<AppDatabase>().characterDao
     }
 }
