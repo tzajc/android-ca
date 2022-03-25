@@ -4,6 +4,7 @@ import com.example.android_ca.core.api.model.EpisodeRemote
 import com.example.android_ca.core.api.model.EpisodeResponse
 import com.example.android_ca.core.api.model.ResponseInfo
 import com.example.android_ca.feature.episodes.data.local.model.EpisodeCached
+import com.example.android_ca.feature.episodes.domain.model.Episode
 import org.jetbrains.annotations.TestOnly
 
 
@@ -31,6 +32,16 @@ fun EpisodeResponse.Companion.mock() = EpisodeResponse(
 
 @TestOnly
 fun EpisodeCached.Companion.mock() = EpisodeCached(
+    id = 1,
+    name = "Example name",
+    airDate = "2022-02-25",
+    code = "CODE",
+    characters = emptyList(),
+    url = "Example url"
+)
+
+@TestOnly
+fun Episode.Companion.mock() = Episode(
     id = 1,
     name = "Example name",
     airDate = "2022-02-25",

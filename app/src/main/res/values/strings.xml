@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">android-ca</string>
+    <string name="app_name">Rick and Morty</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="episode_name">Name</string>
+    <string name="episode_code">Code</string>
+    <string name="episode_air_date">2013-12-23</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_episode">Episodes</string>
+    <string name="title_locations">Locations</string>
+    <string name="title_characters">Characters</string>
+    <string name="character_name">Name</string>
+    <string name="character_status">unknown</string>
+    <string name="character_species">Human</string>
+    <string name="character_image">Character image</string>
+    <string name="location_name">Location name</string>
+    <string name="location_type">Location type</string>
+    <string name="location_dimension">Location dimension</string>
 </resources>

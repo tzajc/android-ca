@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_episodes"
+        android:icon="@drawable/film_24"
+        android:iconTint="@color/secondaryTextColor"
+        android:title="@string/title_episode" />
+
+    <item
+        android:id="@+id/navigation_locations"
+        android:icon="@drawable/globe_24"
+        android:iconTint="@color/secondaryTextColor"
+        android:title="@string/title_locations" />
+
+    <item
+        android:id="@+id/navigation_characters"
+        android:icon="@drawable/users_24"
+        android:title="@string/title_characters" />
+
+</menu>

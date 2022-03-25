@@ -30,7 +30,7 @@ val networkModule = module {
     single {
         Retrofit
             .Builder()
-            .baseUrl("https://rickandmortyapi.com.api/")
+            .baseUrl("https://rickandmortyapi.com/api/")
             .client(get<OkHttpClient>())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
